@@ -8,9 +8,10 @@ import numpy as np
 
 # Question structure
 class Question:
-    def __init__(self, question, qtype, id=None):
+    def __init__(self, question, qtype, marks, id=None):
         self.question = question
         self.qtype = qtype
+        self.marks = marks
         self.id = id
         self.ms = {}
 
