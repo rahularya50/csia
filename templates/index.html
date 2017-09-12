@@ -12,9 +12,14 @@
 {% endif %}
 
 <form method="post" action="{{ url_for('go') }}">
-    <input type="text" name="test" id="test" />
+    <input type="text" name="answer" id="answer" />
+    <input type="hidden" name="qid" id="qid" value="{{qid}}"/>
     <input type="submit" />
 </form>
+
+<br /><br />
+
+Want to add new questions? Click <a href="{{ url_for('questions') }}">here</a>.
 
 </body>
 </html>

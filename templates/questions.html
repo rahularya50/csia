@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Paper</title>
+</head>
+<body>
+    <div>Please upload the paper and mark scheme in
+        <b><a href="http://www.pdfonline.com/convert-pdf-to-html/">HTML</a></b> format.
+    </div>
+    <form method="post" enctype="multipart/form-data" action="{{url_for('add')}}">
+        <label for="ms_file">Mark Scheme: </label>
+        <input type="file" name="ms_file" id="ms_file" />
+        <input type="submit" name="submit" />
+    </form>
+</body>
+</html>
